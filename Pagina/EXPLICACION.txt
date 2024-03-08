@@ -1,0 +1,66 @@
+Explicacion de como Ejecutar el codigo por medio de la terminal
+
+1. Ubiquese en la carpeta principal que se llama PAGINA y navegue hasta ella. 
+
+2. Cree un nuevo entorno virtual en esa carpeta y active ese entorno:
+        > py -3 -m venv .venv
+        > .venv\Scripts\activate
+
+3. Reflex está disponible como paquete de pips . Instale Reflex en su entorno:
+        > pip install reflex
+
+4. Proceda a ejecutar el comando "cd" de la siguiente manera:
+        > cd .\basados\
+    Esto lo ubicara en la carpeta "basados" que esta dentro de la carpeta principal llamada "PAGINA"
+
+5. La instalación de Reflex también instala la reflexherramienta de línea de comandos. Pruebe que la instalación fue exitosa ejecutando:
+        > reflex init
+    Esto inicializa una aplicación de plantilla en su nuevo directorio. 
+
+6. Ejecute la aplicación
+        >reflex run
+    Deberías ver tu aplicación ejecutándose en http://localhost:3000 .
+
+7. En otro terminal de python, ejecute el siguiente comando:
+        > cd .\chatapp\
+    Este comando lo ubicara en la carpeta del asistente virtual
+
+8. 5. La instalación de Reflex también instala la reflexherramienta de línea de comandos. Pruebe que la instalación fue exitosa ejecutando:
+        > reflex init
+    Esto inicializa una aplicación de plantilla en su nuevo directorio. 
+
+9. Ejecute la aplicación
+        >reflex run
+
+    Le saldra el siguiente mensaje
+        "Info: Something is already running on port 3000. This is the port the frontend runs on."
+        "Kill or change it? [k/c/n]: "
+
+    Usted ingresara la letra c, para cambiar el puerto del frontend ya que en el puerto que viene por defecto se esta ejecutando la pagina web.
+
+    Le saldra un mensaje como este:
+    "Specify the new port:"
+    A continuacion usted ingresara el numero del puerto que en este caso va a ser 4000
+
+    El siguiente mensaje da a entender que el puerto se ha modificado exitosamente para la ejecucion del frontend: "Info: The frontend will run on port 4000."
+
+10. Le saldra el siguientemensaje: 
+    "Info: Something is already running on port 8000. This is the port the backend runs on."
+    "Kill or change it? [k/c/n]:"
+
+    Usted ingresara la letra c, para cambiar el puerto del backend ya que en el puerto que viene por defecto se esta ejecutando la pagina web.
+
+    Le saldra un mensaje como este:
+    "Specify the new port:"
+    A continuacion usted ingresara el numero del puerto que en este caso va a ser 9000
+
+    El siguiente mensaje da a entender que el puerto se ha modificado exitosamente para la ejecucion del backend: "Info: The backend will run on port 9000."
+    
+    por ultimo saldran los siguientes mensajes:
+
+        Info: Overriding config value frontend_port with env var FRONTEND_PORT=4000
+        Info: Overriding config value backend_port with env var BACKEND_PORT=9000
+
+        Esto da a entender que se ha configurado un nuevo puerto para el frontend y el backend.
+
+11. Ya al finalizar los pasos anteriores, explore y disfrute de la pagina web c:
