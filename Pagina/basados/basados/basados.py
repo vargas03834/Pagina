@@ -29,7 +29,7 @@ def menu() -> rx.Component:
 		        rx.link("AYUDA/PQR",font_size="0.7em", color = "black",href="http://localhost:4000/",),
                 spacing=8,
 		        variant="link",
-            ), style={"position": "fixed", "top": "8%", "left": "250", "transform": "translateY(-50%)", "widht": "100%", "fontSize": "2em"},
+            ), style={"position": "fixed", "top": "8%", "left": "350", "transform": "translateY(-50%)", "widht": "100%", "fontSize": "2em"},
         ),rx.hstack(
          	rx.chakra.icon(tag="check_circle", 
                 style ={"position": "fixed", 
