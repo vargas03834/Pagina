@@ -26,48 +26,50 @@ export default function Component() {
   <RadixThemesBox>
   <RadixThemesBox>
   <RadixThemesFlex align={`start`} direction={`column`} gap={`2`}>
-  <RadixThemesHeading css={{"position": "fixed", "top": "8%", "transform": "translateY(0%)", "left": "750", "fontSize": "3.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
+  <RadixThemesHeading css={{"position": "absolute", "top": "8vh", "transform": "translatex(40%)", "fontSize": "3.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
   {`Crear Nueva Cuenta`}
 </RadixThemesHeading>
   <RadixThemesFlex align={`start`} direction={`column`} gap={`2`}>
-  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "17%", "transform": "translateY(0%)", "left": "770", "fontSize": "1.7em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
+  <RadixThemesText as={`p`} css={{"position": "absolute", "top": "20vh", "transform": "translatex(41%)", "fontSize": "1.7em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
   {`Ya se encuentra registrado?, Ingrese`}
 </RadixThemesText>
 </RadixThemesFlex>
   <RadixThemesFlex align={`start`} direction={`column`} gap={`2`}>
-  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "25%", "transform": "translateY(50%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
+  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "25vh", "transform": "translate(44.2%)", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
   {`NOMBRE `}
 </RadixThemesText>
   <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <RadixThemesAvatar css={{"position": "fixed", "top": "30.5%", "transform": "translateY(0%)", "left": "760", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}} size={`2`}/>
-  <RadixThemesTextField.Input css={{"position": "fixed", "top": "30%", "transform": "translateY(0%)", "left": "790", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px"}} placeholder={`Ingrese su nombre`}/>
+  <RadixThemesAvatar css={{"position": "absolute", "top": "29.5vh", "left": "41%", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}} size={`2`}/>
+</RadixThemesFlex>
+  <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
+  <RadixThemesTextField.Input css={{"position": "absolute", "top": "27vh", "left": "850px", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px", "background": "#B8BBBE"}} placeholder={`Ingrese su nombre`}/>
 </RadixThemesFlex>
 </RadixThemesFlex>
   <RadixThemesFlex align={`start`} direction={`column`} gap={`2`}>
-  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "37%", "transform": "translateY(0%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
+  <RadixThemesText as={`p`} css={{"position": "absolute", "top": "37vh", "transform": "translate(44.2%)", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
   {`CORREO ELECTRONICO `}
 </RadixThemesText>
   <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <LucideMoonIcon css={{"color": "var(--current-color)", "position": "fixed", "top": "42%", "transform": "translateY(0%)", "left": "775", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}}/>
-  <RadixThemesTextField.Input css={{"position": "fixed", "top": "40.5%", "transform": "translateY(0%)", "left": "790", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px"}} placeholder={`Ingrese su correo electrónico`}/>
+  <LucideMoonIcon css={{"color": "var(--current-color)", "position": "absolute", "top": "41vh", "left": "41.5%", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}}/>
+  <RadixThemesTextField.Input css={{"position": "absolute", "top": "38vh", "left": "850px", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px", "background": "#B8BBBE"}} placeholder={`Ingrese su correo electrónico`}/>
 </RadixThemesFlex>
 </RadixThemesFlex>
   <RadixThemesFlex align={`start`} direction={`column`} gap={`2`}>
-  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "48%", "transform": "translateY(0%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
+  <RadixThemesText as={`p`} css={{"position": "absolute", "top": "47vh", "transform": "translate(44.2%)", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
   {`CONTRASEÑA `}
 </RadixThemesText>
   <RadixThemesFlex align={`start`} direction={`row`} gap={`2`}>
-  <ViewOffIcon sx={{"position": "fixed", "top": "53%", "transform": "translateY(0%)", "left": "775", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}}/>
-  <RadixThemesTextField.Input css={{"position": "fixed", "top": "52%", "transform": "translateY(0%)", "left": "790", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px"}} placeholder={`Ingrese su contraseña`} type={`password`}/>
+  <ViewOffIcon sx={{"position": "fixed", "bottom": "42.4%", "transform": "translateY(0%)", "left": "800px", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}}/>
+  <RadixThemesTextField.Input css={{"position": "absolute", "top": "48vh", "left": "850px", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px", "background": "#B8BBBE"}} placeholder={`Ingrese su contraseña`} type={`password`}/>
 </RadixThemesFlex>
-  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "57%", "transform": "translateY(50%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
+  <RadixThemesText as={`p`} css={{"position": "fixed", "top": "57%", "transform": "translateY(50%)", "left": "850px", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "100%"}}>
   {`FECHA DE NACIMIENTO `}
 </RadixThemesText>
-  <RadixThemesFlex align={`start`} css={{"position": "fixed", "top": "57%", "transform": "translateY(100%)", "left": "800", "fontSize": "1.5em", "marginBottom": "20px", "border": "2px solid lightgray", "align": "start", "width": "350px", "height": "50px"}} direction={`column`} gap={`2`}>
+  <RadixThemesFlex align={`start`} css={{"position": "fixed", "top": "62%", "left": "850px", "fontSize": "1.5em", "marginBottom": "20px", "border": "2px solid lightgray", "align": "start", "width": "350px", "height": "50px"}} direction={`column`} gap={`2`}>
   <div dangerouslySetInnerHTML={{"__html": "<input type='date' name='fecha' id='fecha', placeholder='Seleccione su fecha de nacimiento'>"}}/>
 </RadixThemesFlex>
 </RadixThemesFlex>
-  <RadixThemesLink asChild={true} css={{"fontSize": "1.5em", "position": "fixed", "top": "70%", "left": "900", "width": "170px", "height": "50px", "margin-top": "100px", "color": "white", "background-color": "black", "border": "none", "border-radius": "20px", "cursor": "pointer", "text-align": "center"}}>
+  <RadixThemesLink asChild={true} css={{"fontSize": "1.5em", "position": "fixed", "top": "70%", "left": "900px", "width": "170px", "height": "50px", "margin-top": "100px", "color": "white", "background-color": "black", "border": "none", "border-radius": "20px", "cursor": "pointer", "text-align": "center"}}>
   <NextLink href={`http://localhost:3000/dashboard/`} passHref={true}>
   {`Ingresar`}
 </NextLink>

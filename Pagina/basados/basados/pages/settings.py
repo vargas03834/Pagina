@@ -26,47 +26,135 @@ from basados.pages.state import States
 def settings() -> rx.Component:
     
     return rx.vstack(
-        rx.heading("Crear Nueva Cuenta", style ={"position": "fixed", "top": "8%", "transform": "translateY(0%)", "left": "750", "fontSize": "3.2em", "marginBottom": "20px", "align": "start", "width": "100%"}),
+        rx.heading("Crear Nueva Cuenta", 
+                   style ={"position": "absolute", 
+                           "top": "8vh", 
+                           "transform": "translatex(40%)", 
+                           "fontSize": "3.2em", 
+                           "marginBottom": "20px", 
+                           "align": "start", 
+                           "width": "100%"}),
         rx.vstack(
-            rx.text("Ya se encuentra registrado?, Ingrese", style = {"position": "fixed", "top": "17%", "transform": "translateY(0%)", "left": "770", "fontSize": "1.7em", "marginBottom": "20px", "align": "start","width": "100%"}),
-        ),
-        rx.vstack(
-            rx.text("NOMBRE ", style ={"position": "fixed", "top": "25%", "transform": "translateY(50%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start","width": "100%"}),
+            rx.text("Ya se encuentra registrado?, Ingrese", 
+                    style = {"position": "absolute", 
+                             "top":"20vh",
+                             "transform": "translatex(41%)",
+                             "fontSize": "1.7em", 
+                             "marginBottom": "20px", 
+                             "align": "start",
+                             "width": "100%"}),
+        ),rx.vstack(
+            rx.text("NOMBRE ", 
+                    style ={"position": "fixed", 
+                            "top": "25vh", 
+                            "transform": "translate(44.2%)", 
+                            "fontSize": "1.2em", 
+                            "marginBottom": "20px", 
+                            "align": "start",
+                            "width": "100%"}),
             rx.hstack(
-                rx.avatar(style ={"position": "fixed", "top": "30.5%", "transform": "translateY(0%)", "left": "760", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"},size="2"),
-                rx.input(
+                rx.avatar(style ={"position": "absolute", 
+                                  "top": "29.5vh", 
+                                  "left":"41%", 
+                                  "fontSize": "1.2em", 
+                                  "marginBottom": "20px", 
+                                  "align": "start",},
+                                  size="2"),
+                ),rx.hstack(rx.input(
                     placeholder="Ingrese su nombre",
-                    style ={"position": "fixed", "top": "30%", "transform": "translateY(0%)", "left": "790", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px"},
+                        style ={"position": "absolute", 
+                                "top": "27vh", 
+                                "left":"850px",
+                                "fontSize": "1.2em", 
+                                "marginBottom": "20px", 
+                                "align": "start", 
+                                "width": "350px", 
+                                "height": "50px",
+                                "bg":"#B8BBBE",},          
                 )
             )
-        ),
-        rx.vstack(
-            rx.text("CORREO ELECTRONICO " , style= {"position": "fixed", "top": "37%", "transform": "translateY(0%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start","width": "100%"}),
+        ),rx.vstack(
+            rx.text("CORREO ELECTRONICO " , 
+                    style= {"position": "absolute", 
+                            "top": "37vh", 
+                            "transform": "translate(44.2%)", 
+                            "fontSize": "1.2em", 
+                            "marginBottom": "20px", 
+                            "align": "start",
+                            "width": "100%"}),
             rx.hstack(
-                rx.icon(tag="moon", style ={"position": "fixed", "top": "42%", "transform": "translateY(0%)", "left": "775", "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}),
-                rx.input(
-                    placeholder="Ingrese su correo electrónico",
-                    style ={"position": "fixed", "top": "40.5%", "transform": "translateY(0%)", "left": "790", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px"},
+                rx.icon(tag="moon", 
+                        style ={"position": "absolute", 
+                                  "top": "41vh", 
+                                  "left":"41.5%", 
+                                  "fontSize": "1.2em", 
+                                  "marginBottom": "20px", 
+                                  "align": "start",}),
+                                  
+                rx.input(placeholder="Ingrese su correo electrónico",
+                            style ={"position": "absolute", 
+                                "top": "38vh", 
+                                "left":"850px",
+                                "fontSize": "1.2em", 
+                                "marginBottom": "20px", 
+                                "align": "start", 
+                                "width": "350px", 
+                                "height": "50px",
+                                "bg":"#B8BBBE",},
                 )
             )
-        ),
-        rx.vstack(
-            rx.text("CONTRASEÑA ", style ={"position": "fixed", "top": "48%", "transform": "translateY(0%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start","width": "100%"}),
+        ),rx.vstack(
+            rx.text("CONTRASEÑA ", 
+                    style= {"position": "absolute", 
+                            "top": "47vh", 
+                            "transform": "translate(44.2%)", 
+                            "fontSize": "1.2em", 
+                            "marginBottom": "20px", 
+                            "align": "start",
+                            "width": "100%"}),
             rx.hstack(
-                rx.chakra.icon(tag="view_off", style ={"position": "fixed", "top": "53%", "transform": "translateY(0%)", "left": "775", 
-                                                "fontSize": "1.2em", "marginBottom": "20px", "align": "start"}),
-                rx.input(
-                    placeholder="Ingrese su contraseña", type_="password",
-                    style ={"position": "fixed", "top": "52%", "transform": "translateY(0%)", "left": "790", "fontSize": "1.2em", "marginBottom": "20px", "align": "start", "width": "350px", "height": "50px"},
-                )),
-                rx.text("FECHA DE NACIMIENTO ", style={"position": "fixed", "top": "57%", "transform": "translateY(50%)", "left": "800", "fontSize": "1.2em", "marginBottom": "20px", "align": "start",  "width": "100%"}
-                ),rx.vstack(
-            rx.html("<input type='date' name='fecha' id='fecha', placeholder='Seleccione su fecha de nacimiento'>"), style={"position": "fixed", "top": "57%", "transform": "translateY(100%)", "left": "800", "fontSize": "1.5em", "marginBottom": "20px","border": "2px solid lightgray", "align": "start", "width": "350px", "height": "50px"})
+                rx.chakra.icon(tag="view_off", 
+                               style ={"position": "fixed", 
+                                       "bottom": "42.4%", 
+                                       "transform": "translateY(0%)", 
+                                       "left": "800px", 
+                                        "fontSize": "1.2em", 
+                                        "marginBottom": "20px", 
+                                        "align": "start"}),
+                rx.input(placeholder="Ingrese su contraseña", type_="password",
+                            style ={"position": "absolute", 
+                                "top": "48vh", 
+                                "left":"850px",
+                                "fontSize": "1.2em", 
+                                "marginBottom": "20px", 
+                                "align": "start", 
+                                "width": "350px", 
+                                "height": "50px",
+                                "bg":"#B8BBBE",}),
+                ),rx.text("FECHA DE NACIMIENTO ", 
+                          style={"position": "fixed", 
+                                 "top": "57%", 
+                                 "transform": "translateY(50%)", 
+                                 "left": "850px", 
+                                 "fontSize": "1.2em", 
+                                 "marginBottom": "20px", 
+                                 "align": "start",  
+                                 "width": "100%"}
+                ),rx.vstack(rx.html("<input type='date' name='fecha' id='fecha', placeholder='Seleccione su fecha de nacimiento'>"), 
+                                style={"position": "fixed", 
+                                       "top": "62%",  
+                                       "left": "850px", 
+                                       "fontSize": "1.5em", 
+                                       "marginBottom": "20px",
+                                       "border": "2px solid lightgray", 
+                                       "align": "start", 
+                                       "width": "350px", 
+                                       "height": "50px",})
             ),rx.link("Ingresar",href="http://localhost:3000/dashboard/",
                       style={"fontSize": "1.5em",
                                 "position": "fixed", 
                                 "top": "70%", 
-                                "left": "900", 
+                                "left": "900px", 
                                 "width": "170px", 
                                 "height": "50px",
                                 "margin-top": "100px", 
@@ -77,7 +165,7 @@ def settings() -> rx.Component:
                                 "cursor": "pointer",
                                 "text-align": "center"}),
                                 
-        )
+)
     
     
 
